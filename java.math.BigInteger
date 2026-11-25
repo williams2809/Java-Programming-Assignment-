@@ -1,0 +1,14 @@
+public class FibonacciSequence {
+    public static void main(String[] args) {
+        long first = 0;
+        long second = 1;
+
+        for (int count = 1; count <= 100; count++) {
+            System.out.println(first);
+
+            long next = first + second;
+            first = second;
+            second = next;
+        }
+    }
+}
